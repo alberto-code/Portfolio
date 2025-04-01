@@ -12,7 +12,7 @@ Aplicación Web hecha con (HTML,CSS,Javascript,PHP y mySQL) para administrar y g
 #### **Opción 1: Clonar con Git**
 ```bash
 git clone https://github.com/alberto-code/Portfolio.git
-
+```
 #### **Opción 2: Descargar Manualmente
 -Ir al repositorio en GitHub.
 -Hacer clic en "Code" → "Download ZIP".
