@@ -1,0 +1,370 @@
+/* Estilos generales del calendario */
+.calendarioContainer {
+    width: 1000px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: var(--black);
+    margin-top: 30px;
+    border-radius: 28px;
+}
+
+.calendarioHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+    background: var(--white);
+    border-radius: 8px 8px 0 0;
+}
+.calendarioHeader button{
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: var(--white);
+    background: var(--black);
+    padding: 6px 12px;
+    border-radius: 8px;
+    inset: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+.calendarioHeader button:hover{
+    color: var(--black);
+    background: var(--white);
+}
+.calendarioHeaderDiv{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: var(--black);
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.calendarioHeaderDiv a{
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.2s;
+    &:hover{
+        color: var(--black);
+    }
+}
+
+.calendarioGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0px;
+    box-sizing: border-box;
+}
+
+.diaDiv {
+    height: 90px;
+    padding: 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.diaVacio{
+    box-sizing: border-box;
+    height: 90px;
+    border: 1px solid #000;
+    background-color: #212121;
+    text-align: center;
+    padding: 0px;
+}
+
+.diaButton {
+    box-sizing: border-box;
+    background-color: var(--black);
+    color: white;
+    border: 1px solid #fff;
+    padding: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: all 0.2s;
+    position: relative;
+}
+.diaButton .numeroYDia{
+    box-sizing: border-box;
+    width: 100%;
+    background: var(--primary);
+    color: var(--white);
+    padding:5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.diaButton .indicadorRegistros{
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+}
+
+.diaButton:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1; /* Mantener encima de otros elementos */
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+}
+
+.modalContent {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: black;
+}
+
+.tablaRegistros {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablaRegistros th, .tablaRegistros td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tablaRegistros th {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Estilos para pantallas móviles */
+@media only screen and (max-width: 600px) {
+ /* Estilos generales del calendario */
+.calendarioContainer {
+    width: 100%;
+    padding: 0px;
+    margin-top: -10px;
+    box-sizing: border-box;
+    background: var(--black);
+}
+
+.calendarioHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+    background: var(--white);
+    border-radius: 0;
+}
+.calendarioHeader button{
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: var(--white);
+    background: var(--black);
+    padding: 6px 12px;
+    border-radius: 8px;
+    inset: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+.calendarioHeader button:hover{
+    color: var(--black);
+    background: var(--white);
+}
+.calendarioHeaderDiv{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: var(--black);
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.calendarioHeaderDiv a{
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.2s;
+    &:hover{
+        color: var(--black);
+    }
+}
+
+.calendarioGrid {
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 0px;
+    box-sizing: border-box;
+}
+
+.diaDiv {
+    height: 150px;
+    padding: 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.diaVacio{
+    box-sizing: border-box;
+    height: 80px;
+    border: 1px solid #000;
+    background-color: #212121;
+    text-align: center;
+    padding: 0px;
+    display: none;
+}
+
+.diaButton {
+    box-sizing: border-box;
+    background-color: var(--black);
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: all 0.2s;
+}
+.diaButton .numeroYDia{
+    box-sizing: border-box;
+    width: 100%;
+    background: var(--primary);
+    color: var(--white);
+    padding:5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.diaButton .indicadorRegistros{
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+}
+
+.diaButton:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1; /* Mantener encima de otros elementos */
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+    font-family: 'Poppins';
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+.modalContent {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+
+}
+
+.closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: black;
+}
+
+.tablaRegistros {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tablaRegistros th, .tablaRegistros td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tablaRegistros th {
+    background-color: var(--primary);
+    color: white;
+}
+}

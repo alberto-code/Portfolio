@@ -1,0 +1,324 @@
+.confirmacion{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.loginForm{
+    width: 500px;
+    height: 600px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    background: #5b5d4169;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #babecc7c, -10px -10px 20px #ffffff6f;
+    overflow: hidden;
+}
+.loginHeader{
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.loginHeader img{
+    width: 75px;
+}
+.loginHeader > h2{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: #fdfdfd;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.loginData{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.loginData form{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    top: 0;
+}
+
+.loginData form input[type="text"],.loginData form input[type="password"]{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    line-height: 0;
+    color: #fdfdfd;
+    letter-spacing: 0.5px;
+    background: #212121;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 95%;
+    display: flex;
+    outline: 0;
+    box-sizing: border-box;
+    &:focus,&:active{
+        border: 3px solid #fdfdfd;
+    }
+}
+
+
+form label{
+    color: #fdfdfd;
+    font-size: 1.475rem;
+    font-family: 'Poppins';
+    line-height: 0;
+    letter-spacing: 0.5px;
+    margin-bottom: -15px;
+    text-align: left;
+    width: 94%;
+}
+
+.loginData form button{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: #fdfdfd;
+    letter-spacing: 1.5px;
+    background: #9bbb1d;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 410px;
+    height: 75px;
+    cursor: pointer;
+}
+.loginData form button:hover{
+    color: #212121;
+    background: #fdfdfd;
+}
+.error404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+.error404 img{
+    width: 250px;
+    filter: drop-shadow(1px 1px 1px #212121);
+}
+.error404 svg{
+    width: 150px;
+    filter: drop-shadow(0 0 4px #212121);
+}
+.error404 h2{
+    font-family: 'Poppins';
+    font-size: 1.475rem;
+    font-weight: 900;
+    color: #fdfdfd;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.error404 button{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 1.5px;
+    background: var(--black);
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 410px;
+    height: 75px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.error404 a{
+    cursor: pointer;
+    width: 410px;
+}
+
+.error404 .escaner{
+    background: #E84353;
+}
+.error404 .escaner:hover{
+    background: var(--white);
+    color: #E84353;
+}
+.error404 button:hover{
+    background: var(--white);
+    color: var(--black);
+}
+.error404 .pedidosBotonConfirmaciones{
+    background: var(--primary);
+    color: var(--white);
+    &:hover{
+        background: var(--white);
+        color: var(--black);
+    }
+}
+.spanCarga{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+    width: 100px;
+}
+.spanCarga span{
+    width: 100px;
+    height: 8px;
+    border-radius: 48px;
+    border: 1px solid var(--black);
+    animation: enviandoPedido 2s linear forwards;
+    left: 0;
+    position: absolute;
+    background: var(--white);
+}
+.camion{
+    animation: moverCamion 4s linear forwards;
+    position: relative;
+    filter: drop-shadow(0 0 0 #212121);
+}
+.textoCamion{
+    animation: opacidad 6s linear forwards;
+}
+
+@keyframes enviandoPedido {
+    0% {
+        width: 0;
+        background: transparent;
+        }
+    
+      100% {
+        width: 100px;
+        background: var(--white);
+    }
+}
+@keyframes moverCamion {
+    0% {
+       left: 0;
+        }
+    
+      100% {
+       left: 350px;
+       display: none;
+    }
+}
+@keyframes opacidad {
+    0% {
+      opacity: 0;
+        }
+    40%{
+        opacity: 0;
+    }
+    
+      100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .loginForm{
+        width: 500px;
+        height: 500px;
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+        border-radius: 8px;
+        background: #5b5d4169;
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 10px 10px 20px #babecc7c, -10px -10px 20px #ffffff6f;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .confirmacion{
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+            gap: 25px;
+    }
+        
+    .loginForm{
+        width: 380px;
+        height: 500px;
+        padding: 10px;
+    }
+    .loginHeader img{
+        width: 75px;
+    }
+    .loginHeader > h2{
+        font-size: 1.475rem;
+    }
+    
+    .loginData form input[type="text"],.loginData form input[type="password"]{
+        font-size: 1.475rem;
+    }
+    
+    form label{
+        font-size: 1.275rem;
+    }
+    
+    .loginData form button{
+        font-size: 1.875rem;
+        width: 95%;
+        height: 60px;
+    }
+    .error404 button{
+        font-size: 1.275rem;
+        width: 350px;
+    }
+    .error404 a{
+        cursor: pointer;
+        width: 300px;
+    } 
+    .error404 a button{
+        font-size: 1.275rem;
+        width: 300px;
+    }
+     
+}

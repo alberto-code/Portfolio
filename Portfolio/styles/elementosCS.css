@@ -1,0 +1,264 @@
+.elementosDiv{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.elementosDiv > h2{
+    font-family: 'Poppins';
+    font-size: 2.875rem;
+    font-weight: 900;
+    color: var(--black);
+    letter-spacing: 0.5px;
+    line-height: 0;
+    text-transform: uppercase;
+}
+.volverAtras{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins';
+    font-size: 1.475rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    line-height: 0;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+   
+}
+.volverAtras span{
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    &:hover{
+        color: var(--white);
+    }
+}
+.volverAtras span svg{
+    width: 30px;
+    height: 30px;
+  
+}
+.elementosGrid{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    margin-top: 16px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    position: relative;
+}
+.elementosGrid .elementosGridDiv{
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 4px solid var(--white);
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.elementImage{
+    box-sizing: border-box;
+    /* border: 1px solid wheat; */
+    height: 100%;
+    width: 55%;
+    /* background-image: url(../img/ugrolab.jpg); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-image: fill 0 linear-gradient(#0001, #00000099);
+}
+.elementImage h2{
+    font-family: 'Poppins';
+    font-size: 0.775rem;
+    font-weight: 800;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background-color: var(--black);
+    box-sizing: border-box;
+    border: 2px solid var(--white);
+    padding: 15px;
+    border-radius: 8px;
+}
+.elementImage .nameElement{
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    width: 80%;
+    line-height: 20px;
+    font-weight: 800;
+    color: var(--white);
+    text-transform: uppercase;
+    background: transparent;
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+    text-shadow: 0 0 .1vh var(--black);
+    backdrop-filter: blur(10px);
+}
+.elementData{
+    box-sizing: border-box;
+    /* border: 1px solid wheat; */
+    height: 100%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.elementData span{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid wheat; */
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 0.975rem;
+    font-weight: 700;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.elementData a{
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    font-weight: 700;
+    /* line-height: 0; */
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.elementData a:hover{
+    border: 3px solid var(--white);
+    background-color: var(--primary);
+}
+
+#buscadorNombredeElementos{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 100%);
+    font-family: 'Poppins';
+    font-size: 1.275rem;
+    font-weight: 700;
+    color: var(--black);
+    padding: 10px 20px;
+    border-radius: 32px;
+    border: 1px solid var(--black);
+}
+
+
+/*MEDIA PORTATILES */
+
+@media (max-width: 1500px) {
+    .elementosDiv h2{
+        font-size: 1.675rem;
+    }
+    .elementosGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .elementImage h2{
+        font-size: 0.775rem;
+    }
+    .elementImage .nameElement{
+        font-size: 0.875rem;
+    }
+    .elementData span{
+        font-size: 0.975rem;
+    }
+    .elementData a{
+        font-size: 0.950rem;
+        padding: 12px;
+    }
+    }
+
+
+
+@media (max-width: 500px) {
+    .elementosDiv{
+        width: 100%;
+        padding: 20px;
+    }
+    .elementosDiv h2{
+        font-size: 1.875rem;
+    }
+    .elementosGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .elementImage h2{
+        font-size: 0.775rem;
+    }
+    .elementImage .nameElement{
+        font-size: 0.875rem;
+    }
+    .elementData span{
+        font-size: 0.975rem;
+    }
+    .elementData a{
+        font-size: 0.735rem;
+        padding: 12px;
+    }
+    .volverAtras{
+        font-size: 1.075rem;
+        margin-bottom: 20px;
+    }
+    .volverAtras span{
+        color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        box-sizing: border-box;
+        /* border: 1px solid red; */
+        cursor: pointer;
+        &:hover{
+            color: var(--white);
+        }
+    }
+    .volverAtras span svg{
+        width: 25px;
+        height: 25px;
+      
+    }
+}

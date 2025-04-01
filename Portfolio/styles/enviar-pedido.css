@@ -1,0 +1,319 @@
+
+.enviarPedido{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.enviarPedidoDiv{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enviarPedidoDivForm{
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.enviarPedidoDivForm > h2{
+    font-family: 'Poppins';
+    font-size: 2.875rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.enviarPedidoDivForm form{
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    width: 100%;
+    background: #5b5d4169;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 10px 10px 20px #babecc7c, -10px -10px 20px #ffffff6f;
+}
+.enviarPedidoDivForm form .dosColumnas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+}
+.dosColumnas .dosColumnasProducts{
+width: 30%;
+height: 100%;
+box-sizing: border-box;
+/* border-right: 1px solid black; */
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 15px;
+}
+.dosColumnas .dosColumnasPalets{
+width: 70%;
+height: 100%;
+box-sizing: border-box;
+/* border-left: 1px solid black; */
+padding: 10px;
+}
+.dosColumnasPalets > h4{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    font-weight: 900;
+    text-align: center;
+    /* line-height: 0; */
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.dosColumnasPaletsGrid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 100%;
+}
+.dosColumnasPaletsDiv{
+    background: var(--white);
+    opacity: 0.6;
+    color: var(--black);
+    width: 100%;
+    font-family: 'Poppins';
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.dosColumnasPaletsDiv h4{
+    font-size: 1.075rem;
+    font-weight: 900;
+    line-height: 0;
+}
+.dosColumnasPaletsDiv svg{
+    width: 25px;
+    height: 25px;
+    transition: all 0.2s;
+    &:hover{
+        color: lightsalmon;
+    }
+}
+
+.enviarPedidoDivForm form input[type="text"]{
+    color: var(--black);
+    opacity: 0.6;
+    background: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 350px;
+    &::placeholder{
+        transition: all 0.5s;
+    }
+}
+.enviarPedidoDivForm form input[type="text"]:focus::placeholder{
+    color: var(--black);
+}
+.enviarPedidoDivForm .label-fecha-pedido{
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+}
+.enviarPedidoDivForm form input[type="date"]{
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 350px;
+}
+.enviarPedidoDivForm form button{
+    color: var(--white);
+    background: var(--primary);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 380px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+        background: var(--white);
+        color: var(--primary);
+    }
+}
+
+.enviarPedidoDivForm form input[type="number"]{
+    color: var(--black);
+    opacity: 0.6;
+    background: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.475rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100px;
+}
+.enviarPedidoDivForm form input::-webkit-outer-spin-button,
+.enviarPedidoDivForm form input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+    margin: 0;
+}
+
+#enviarPedidoForm span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+}
+#enviarPedidoForm .addedProduct svg{
+    color: var(--white);
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    transition: all 0.2s;
+    &:hover{
+        color: lightsalmon;
+    }
+}
+/* #lectorPedidosSalida{
+    width:100%;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+ } */
+#lectorPedidosSalida video{
+    width:100%;
+    /* max-width: 640px; */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+ }
+
+
+@media (max-width: 500px) {
+    .enviarPedidoDivForm form{
+        width: 350px;
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    .enviarPedidoDivForm > h2{
+        font-size: 1.875rem;
+        /* line-height: 32px; */
+    }
+    
+    .enviarPedidoDivForm .label-fecha-pedido{
+        font-size: 1.475rem;
+    }
+    .enviarPedidoDivForm form input[type="date"]{
+        font-size: 1.475rem;
+        width: 230px;
+    }
+    .enviarPedidoDivForm form input[type="text"]{
+        font-size: 1.475rem;
+        width: 200px;
+    }
+    .enviarPedidoDivForm form button{
+        font-size: 1.475rem;
+        width: 260px;
+    }
+    
+    .enviarPedidoDivForm form input[type="number"]{
+        font-size: 1.075rem;
+        width: 30px;
+    }
+
+    #enviarPedidoForm span{
+        font-size: 1.275rem;
+    }
+    #enviarPedidoForm span select{
+        font-size: 1.475rem;
+        width: 200px;
+    }
+    #enviarPedidoForm .addedProduct svg{
+        width: 30px;
+        height: 30px;
+    }
+    
+
+
+
+
+    .dosColumnas .dosColumnasProducts{
+        width: 100%;
+    }
+        .dosColumnas .dosColumnasPalets{
+        width: 100%;
+    }
+    .dosColumnasPalets > h4{
+        font-size: 1.275rem;
+    }
+    .dosColumnasPaletsGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dosColumnasPaletsDiv h4{
+        font-size: 1.075rem;
+        font-weight: 900;
+        line-height:normal;
+    }
+    .dosColumnasPaletsDiv svg{
+        width: 35px;
+        height: 35px;
+    }
+
+}

@@ -1,0 +1,233 @@
+.lotes{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.lotes > h2{
+    font-family: 'Poppins';
+    font-size: 2.875rem;
+    font-weight: 900;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.lotes .lotesGrid{
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+    width: 90%;
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.lotesGrid .loteDiv{
+    width: 100%;
+    height: 200px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%);
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 10px; */
+}
+.loteDiv .loteButton{
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--black);
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.loteButton svg{
+    box-sizing: border-box;
+    background: #E84353;
+    color: var(--white);
+    width: 40px;
+    border-radius: 8px;
+    padding: 8px;
+}
+.loteButton a{
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: var(--primary);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0;
+    letter-spacing: 0.3px;
+    color: var(--white);
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+        background: var(--white);
+        color: var(--primary);
+    }
+}
+.loteButton a .palets{
+position: fixed;
+width: 97.7vw;
+height: 79vh;
+top: 150px;
+left: 0px;
+margin: 20px;
+background: var(--black);
+/* display: flex; */
+box-sizing: border-box;
+}
+.noSeVe{
+display: none;
+}
+.siSeVe{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+}
+.loteButton a .palets .paletGrid{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    gap: 20px;
+    overflow-y: auto;
+    /* height: 100%; */
+    width: 100%;
+    padding: 20px;
+}
+.palets button{
+    margin-top: 10px;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: var(--primary);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 0;
+    letter-spacing: 0.3px;
+    color: var(--white);
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+        background: var(--white);
+        color: var(--primary);
+    }
+}
+.paletGrid .palet{
+    box-sizing: border-box;
+    border: 1px solid white;
+    width: 165px;
+    height: 75px;
+    background: var(--white);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+}
+
+.loteDiv .loteName{
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loteName > h2{
+    font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.3px;
+  line-height: 0;
+  color: var(--white);
+}
+.loteName > p{
+    font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0;
+  letter-spacing: 0.3px;
+  color: var(--white);
+}
+
+/*MEDIA PORTATILES */
+
+@media (max-width: 1500px) {
+    .loteButton a .palets{
+    width: 97.2vw;
+    top: 125px;
+    height: 74.5vh;
+    }
+    .loteButton a .palets .paletGrid{
+        grid-template-columns: repeat(8,1fr);
+    }
+
+    .paletGrid .palet{
+        width: 155px;
+        height: 50px;
+        font-size: 16px;
+    }
+  }
+  
+@media (max-width: 500px) {
+    .lotes{
+        /* border: 1px solid red; */
+        height: 100%;
+    }
+    .lotes > h2{
+        font-size: 1.075rem;
+        margin-bottom: 30px;
+    }
+    .lotes .lotesGrid{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .loteButton a .palets{
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    z-index: 9999999;
+    margin: 0;
+    }
+
+    .loteButton a .palets .paletGrid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .paletGrid .palet{
+        width: 145px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+}

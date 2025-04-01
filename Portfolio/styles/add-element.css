@@ -1,0 +1,323 @@
+.modalAddForm {
+    display: none; 
+    position: fixed; 
+    z-index: 2; 
+    margin-top: 90px; 
+    left: 0;
+    top: 10px;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); 
+    justify-content: center;
+    align-items: center;
+}
+
+.addForm{
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addForm .form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: var(--white);
+    box-shadow: 0 .1vh 1vh #212121;
+    border-radius: 8px;
+    padding: 15px;
+}
+.addForm .form .page-title{
+    font-family: 'Poppins';
+    font-size: 2.875rem;
+    font-weight: 900;
+    /* line-height: 0; */
+    text-align: center;
+    color: var(--black);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.addForm .form form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+    gap: 30px;
+}
+.addForm .form form select{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    background: var(--black);
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 400px;
+}
+.addForm .form form .inLine{
+width: 400px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+margin: -10px;
+/* border: 1px solid salmon; */
+}
+.addForm .form form .inLine input[type="checkbox"]{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+.addForm .form form .inLine h2{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    line-height: 0;
+    color: var(--black);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.addForm .form form input[type="text"],.addForm .form form input[type="password"],.addForm .form form input[type="number"]{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    background: var(--black);
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 380px;
+}
+.addForm .form form input[type="text"]::placeholder,.addForm .form form input[type="password"]::placeholder,.addForm .form form input[type="number"]::placeholder{
+    color: var(--primary);
+}
+.addForm .form form input[type="file"]{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    background: var(--black);
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 380px;
+    display: none;
+}
+.custom-file-upload {
+    border: 4px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 1.875rem;
+    width: 380px;
+    color: var(--white);
+    background: var(--black);
+    line-height: 0;
+    margin-bottom: 0px;
+  }
+  .custom-file-upload svg{
+    width: 40px;
+  }
+  .custom-file-upload2 {
+    border: 4px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 1.875rem;
+    width: 380px;
+    color: var(--white);
+    background: var(--black);
+    line-height: 0;
+    margin-bottom: 0px;
+  }
+  .custom-file-upload2 svg{
+    width: 40px;
+  }
+.addForm .form form button{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 1.5px;
+    background: var(--primary);
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 410px;
+    height: 75px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.addForm .form form button:hover{
+    background: var(--black);
+}
+
+.textoImagen{
+    border: 4px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    font-size: 1.075rem;
+    width: 380px;
+    color: var(--white);
+    background: var(--primary);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0;
+}
+.textoImagen svg{
+    width: 30px;
+    height: 30px;
+}
+
+
+/*MEDIA PORTATILES */
+
+@media (max-width: 1500px) {
+
+    .addForm{
+        padding: 40px;
+    }
+    
+    .addForm .form .page-title{
+        font-size: 2.275rem;
+        margin-top: 35px;
+    }
+    .addForm .form form{
+        gap: 15px;
+    }
+    .addForm .form form select{
+        font-size: 1.475rem;
+    }
+    .addForm .form form .inLine input[type="checkbox"]{
+        width: 30px;
+        height: 30px; 
+    }
+    .addForm .form form .inLine h2{
+        font-size: 1.475rem;
+    }
+    .addForm .form form input[type="text"],.addForm .form form input[type="password"],.addForm .form form input[type="number"]{
+        font-size: 1.475rem;
+    }
+    .custom-file-upload {
+        font-size: 1.475rem;
+      }
+      .custom-file-upload svg{
+        width: 30px;
+      }
+    .addForm .form form button{
+        font-size: 1.475rem;
+        height: 50px;
+    }
+    
+}
+
+
+@media (max-width: 500px) {
+    .addForm{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    
+    .addForm .form{
+        box-shadow: 0 .1vh 1vh #212121;
+        border-radius: 8px;
+        padding: 15px;
+    }
+    .addForm .form .page-title{
+        font-size: 1.875rem;
+        margin-top: 30px;
+    }
+    .addForm .form form{
+        gap: 20px;
+    }
+    .addForm .form form select{
+        font-size: 1.275rem;
+        width: 300px;
+    }
+    .addForm .form form .inLine{
+    width: 300px;
+    margin: -10px;
+    }
+    .addForm .form form .inLine input[type="checkbox"]{
+        font-size: 1.275rem;
+        width: 30px;
+        height: 30px;
+    }
+    .addForm .form form .inLine h2{
+        font-size: 1.875rem;
+    }
+    .addForm .form form input[type="text"],.addForm .form form input[type="password"],.addForm .form form input[type="number"]{
+        font-size: 1.275rem;
+        width: 270px;
+    }
+    .addForm .form form input[type="file"]{
+        font-size: 1.275rem;
+        width: 270px;
+        display: none;
+    }
+    .custom-file-upload {
+        font-size: 1.275rem;
+        width: 270px;
+      }
+      .custom-file-upload svg{
+        width: 30px;
+      }
+    
+    .addForm .form form button{
+        font-size: 1.675rem;
+        width: 300px;
+        height: 50px;
+    }
+
+    .textoImagen{
+        font-size: 0.675rem;
+        width: 270px;
+    }
+    .textoImagen svg{
+        width: 25px;
+        height: 25px;
+    }
+
+}
+

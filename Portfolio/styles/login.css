@@ -1,0 +1,248 @@
+html,body{
+    background: rgb(33,33,33);
+    background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(155,187,29,1) 50%, rgba(253,253,253,1) 100%);
+margin: 0;
+}
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+
+.loginForm{
+    width: 500px;
+    height: 600px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    background: #5b5d4169;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #babecc7c, -10px -10px 20px #ffffff6f;
+}
+.loginHeader{
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.loginHeader img{
+    width: 75px;
+}
+.loginHeader > h2{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: #fdfdfd;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.loginData{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    position: relative;
+}
+
+.loginData form{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    top: 0;
+}
+
+.loginData form input[type="text"],.loginData form input[type="password"]{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    line-height: 0;
+    color: #fdfdfd;
+    letter-spacing: 0.5px;
+    background: #212121;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 95%;
+    display: flex;
+    outline: 0;
+    box-sizing: border-box;
+    &:focus,&:active{
+        border: 3px solid #fdfdfd;
+    }
+    &::placeholder{
+        transition: all 0.5s;
+    }
+}
+.loginData form input[type="text"]:focus::placeholder,.loginData form input[type="password"]:focus::placeholder{
+    color: #212121;
+}
+
+.loginData form input[type="password"]:focus ~ #ojo, #pass:focus ~ #ojo {
+   opacity: 1;
+}
+
+form label{
+    color: #fdfdfd;
+    font-size: 1.475rem;
+    font-family: 'Poppins';
+    line-height: 0;
+    letter-spacing: 0.5px;
+    margin-bottom: -15px;
+    text-align: left;
+    width: 94%;
+}
+
+.loginData form button{
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: #fdfdfd;
+    letter-spacing: 1.5px;
+    background: #9bbb1d;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 410px;
+    height: 75px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.loginData form button:hover{
+    color: #212121;
+    background: #fdfdfd;
+}
+.error404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.error404 img{
+    width: 250px;
+    filter: drop-shadow(1px 1px 1px #212121);
+}
+.error404 svg{
+    width: 150px;
+}
+.error404 h2{
+    font-family: 'Poppins';
+    font-size: 1.475rem;
+    font-weight: 900;
+    color: #fdfdfd;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#ojo{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    color: #fdfdfd;
+    bottom: 165px;
+    left: 86%;
+    cursor: pointer;
+    opacity: 0; 
+    transition: all 0.5s;
+}
+.errorLogin{
+    box-sizing: border-box;
+    position: absolute;
+    color: crimson;
+    filter: drop-shadow(1px 1px 2px #212121);
+    top: -10%;
+    font-family: 'Poppins';
+    font-size: 1.075rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+
+@media (max-width: 500px) {
+    main{
+        height: 85vh;
+        padding: 20px;
+    }
+    
+    .loginForm{
+        width: 380px;
+        height: 500px;
+        padding: 10px;
+    }
+    .loginHeader img{
+        width: 75px;
+    }
+    .loginHeader > h2{
+        font-size: 1.475rem;
+    }
+    
+    .loginData form input[type="text"],.loginData form input[type="password"]{
+        font-size: 1.475rem;
+    }
+    
+    form label{
+        font-size: 1.275rem;
+    }
+    
+    .loginData form button{
+        font-size: 1.875rem;
+        width: 95%;
+        height: 60px;
+    }
+    #ojo{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        color: #fdfdfd;
+        bottom: 135px;
+        left: 85%;
+        cursor: pointer;
+    }
+    .errorLogin{
+        box-sizing: border-box;
+        position: absolute;
+        color: crimson;
+        filter: drop-shadow(1px 1px 2px #212121);
+        top: -13%;
+        width: 100%;
+        font-family: 'Poppins';
+        font-size: 0.875rem;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: 0.5px;
+    }
+     
+}

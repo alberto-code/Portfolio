@@ -1,0 +1,282 @@
+.dashboard{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.dashboardGrid{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 30px;
+}
+.dashboardGrid > div{
+    border-radius: 8px;
+    height: 220px;
+    font-family: 'Poppins';
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.materiasBOX {
+    grid-area: 1 / 1 / 3 / 3;
+    background: var(--black); 
+    color: var(--white);
+}
+.bobinasBOX {
+    grid-area: 1 / 3 / 3 / 5;
+    background: var(--black); 
+    color: var(--white);
+}
+.productosBOX {
+    grid-area: 1 / 5 / 3 / 7;
+    background: var(--black); 
+    color: var(--white);
+}
+.tecnicosBOX {
+    grid-area: 3 / 1 / 5 / 4;
+    background: var(--white);
+}
+.tecnicosBOX .tecnicosBoxTotal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: 50%;
+    line-height: 0;
+    box-sizing: border-box ;
+    /* border: 1px solid red; */
+}
+.tecnicosBOX .tecnicosBoxTotal h3{
+    font-size: 2.275rem;
+    font-weight:bolder;
+    color: var(--primary);
+    line-height: 0;
+}
+.tecnicosBOX .tecnicosBoxRol{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+}
+.tecnicosBoxRol article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.475rem;
+    text-transform: uppercase;
+}
+.tecnicosBoxRol article h5:first-child{
+    /* color: var(--primary); */
+    font-weight: 400;
+}
+.tecnicosBoxRol h5{
+    line-height: 0;
+}
+.pedidosBOX {
+    grid-area: 3 / 4 / 5 / 7;
+    background: var(--black);
+    color: var(--white);
+    font-size: 1.875rem;
+}
+.pedidosBOX div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+}
+.pedidosBOX div span{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+.pedidosBOX div span h3{
+    font-size: 1.475rem;
+}
+.pedidosBOX div span h2{
+    font-size: 1.875rem;
+    color: var(--primary);
+}
+
+.dashboardInfoTitle{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.675rem;
+    font-family: 'Poppins';
+}
+
+.dashboardInfoData{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.275rem;
+    color: var(--primary);
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--white);
+    border-radius: 4px;
+}
+
+.dashboardInfoData span{
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+.dashboardInfoData span h2{
+    font-size: 1.275rem;
+    font-weight: 500;
+}
+
+.dashboardInfoData span article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight:bolder;
+    color: var(--black);
+    width: 100%;
+    border-bottom: 1px solid var(--black);
+}
+.dashboardInfoData span article:last-child{
+    border-bottom: 0;
+
+}
+.registrosBOX {
+    grid-area: 5 / 1 / 7 / 7;
+    background: var(--white);
+    box-sizing: border-box;
+    padding: 40px !important; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.registrosBOX table{
+    box-sizing: border-box;
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+
+@media (max-width: 500px) {
+
+   
+    .dashboardGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 30px;
+    }
+    
+    .materiasBOX {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .bobinasBOX {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .productosBOX {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .tecnicosBOX {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+   
+
+
+
+    .tecnicosBOX .tecnicosBoxTotal{
+        gap: 20px;
+        height: 30%;
+        line-height: 0;
+    }
+    .tecnicosBOX .tecnicosBoxTotal h3{
+        font-size: 1.675rem;
+        line-height: 0;
+    }
+    .tecnicosBOX .tecnicosBoxRol{
+        justify-content: center;
+        flex-direction: column;
+        height: 70%;
+        line-height: 0;
+        padding:10px;
+    }
+    .tecnicosBoxRol article{
+        justify-content: space-between;
+        gap: 0px;
+        width: 100%;
+        font-size: 1.275rem;
+        line-height: 0;
+        border-bottom: 1px solid black;
+    }
+    .tecnicosBoxRol article:last-child{
+        border: 0;
+    }
+
+    .pedidosBOX {
+        grid-area: 5 / 1 / 6 / 2;
+        font-size: 1.275rem;
+    }
+    .pedidosBOX div{
+        flex-direction: column;
+    }
+    .pedidosBOX div span h3{
+        font-size: 1.275rem;
+    }
+    .pedidosBOX div span h2{
+        font-size: 1.475rem;
+    }
+  
+    .dashboardInfoData span h2{
+        font-size: 0.975rem;
+    }
+    .registrosBOX {
+        grid-area: 6 / 1 / 7 / 2;
+        background: var(--white);
+        display: none !important;
+    }
+    
+    
+}
+
+

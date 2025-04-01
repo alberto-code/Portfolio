@@ -1,0 +1,217 @@
+.salidaPedidos{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.salidaPedidos > h2{
+    font-family: 'Poppins';
+    font-size: 2.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.salidaPedidosList{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.salidaPedidosDiv{
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.5) 100%);
+}
+.salidaPedidosTabla{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.salidaPedidosTabla table{
+    width: 100%;
+    font-family: 'Poppins';
+    /* border: 1px solid var(--black); */
+    border-spacing: 0;
+}
+
+.salidaPedidosTabla table tr th{
+    background: var(--black);
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.salidaPedidosTabla table tr td:first-child{
+    color: var(--black);
+    font-size: 1.275rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.salidaPedidosTabla table tr td{
+    background: linear-gradient(0deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.3) 100%);
+    color: var(--black);
+    font-size: 1.275rem;
+    font-weight: 600;
+}
+.salidaPedidosTabla table tr td:nth-child(4){
+    color: var(--white);
+}
+.botonTablaSalida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.salidaPedidosTabla table tr td a{
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.375rem;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.salidaPedidosTabla table tr td a svg{
+   width: 25px;
+   height: 25px;
+}
+.enviar-pedido-YES{
+    background: var(--primary);
+    cursor: pointer;
+    &:hover{
+        background: var(--white);
+        color: var(--primary);
+    }
+}
+.enviar-pedido-NO{
+    background: #E84353;
+    cursor: not-allowed;
+}
+.salidaPedidosTabla table tr td > div{
+    box-sizing: border-box;
+    width: 100%;
+    /* line-height: 0; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.salidaPedidosTabla table tr td div .productoListaT{
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    background: #fdfdfdbd;
+    font-size: 0.875rem;
+    color: var(--black);
+    width: 100%;
+    /* line-height: 0; */
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.salidaPedidosTabla table tr td span{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* line-height: 0; */
+}
+.salidaPedidosTabla table tr td span h3{
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    /* line-height: 0; */
+}
+.salidaPedidosTabla table tr td p{
+    /* line-height: 0; */
+    font-weight: 900;
+}
+
+
+@media (max-width: 500px) {
+    .salidaPedidos{
+        padding: 0px;
+    }
+    .salidaPedidos > h2{
+        font-size: 2.875rem;
+    }
+    .salidaPedidosList{
+        width: 100%;
+        gap: 20px;
+    }
+    .salidaPedidosTabla table{
+        width: 100%;
+        table-layout: fixed;
+        border: 0;
+    }
+    .salidaPedidosTabla table thead {
+        display: none;
+    }
+    .salidaPedidosTabla table tr{
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid var(--black);
+    }
+    
+    .salidaPedidosTabla table tr td{
+        padding: 10px;
+        border: 0;
+        border-bottom: 1px solid var(--black);
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+    .salidaPedidosTabla table td:last-child{
+        border: 0;
+    }
+    .salidaPedidosTabla table tr td:nth-child(4){
+        color: var(--black);
+    }
+    .salidaPedidosTabla table td::before {
+        content: attr(data-label);
+        float: left;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+        font-size: 1.075rem;
+        color: var(--white);
+        text-transform: uppercase;
+      } 
+
+}
+

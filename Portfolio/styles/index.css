@@ -1,0 +1,100 @@
+.inicioBox{
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+    /* height: 83.5vh; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+.inicioBox div{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #212121; */
+    box-sizing: border-box;
+}
+.inicioBox div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 10px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%);
+    box-sizing: border-box;
+    border: 2px solid #fdfdfd;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  .inicioBox div a:hover{
+    background: var(--white);
+    color: var(--black);
+    border: 2px solid #212121;
+
+  }
+  .inicioBox div a svg{
+    width: 100px;
+    height: 100px;
+  }
+  
+
+/*MEDIA PORTATILES */
+
+@media (max-width: 1500px) {
+  .inicioBox{
+    height: 100%;
+    gap: 40px;
+    padding: 40px;
+}
+.inicioBox div{
+  height: 100%;
+}
+.inicioBox div a{
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .inicioBox{
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px;
+}
+.inicioBox div{
+    height: 270px;
+    width: 180px;
+}
+.inicioBox div a{
+    font-size: 12px;
+    height: 100%;
+  }
+
+  .inicioBox div a svg{
+    width: 70px;
+    height: 70px;
+  }
+}

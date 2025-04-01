@@ -1,0 +1,571 @@
+.nuevoPedido{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nuevoPedidoDiv{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nuevoPedidoDivForm,.nuevoPedidoDivForm2,.nuevoPedidoDivForm3{
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nuevoPedidoDivForm form{
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    width: 500px;
+    background: #5b5d4169;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 10px 10px 20px #babecc7c, -10px -10px 20px #ffffff6f;
+}
+
+.nuevoPedidoDivForm form > h2{
+    font-family: 'Poppins';
+    font-size: 2.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.nuevoPedidoDivForm form input[type="text"],.nuevoPedidoDivForm2 form input[type="text"],.nuevoPedidoDivForm3 form input[type="text"]{
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 350px;
+    &::placeholder{
+        transition: all 0.5s;
+    }
+}
+.nuevoPedidoDivForm form input[type="text"]:focus::placeholder,.nuevoPedidoDivForm2 form input[type="text"]:focus::placeholder{
+    color: var(--black);
+}
+.nuevoPedidoDivForm form select,.nuevoPedidoDivForm2 form select{
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 375px;
+}
+.nuevoPedidoDivForm .label-fecha-pedido,.nuevoPedidoDivForm2 .label-fecha-pedido{
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+}
+.nuevoPedidoDivForm form input[type="date"],.nuevoPedidoDivForm2 form input[type="date"]{
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 350px;
+}
+.nuevoPedidoDivForm form button,.nuevoPedidoDivForm2 form button,.nuevoPedidoDivForm3 form button{
+    color: var(--white);
+    background: var(--primary);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 380px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+        background: var(--white);
+        color: var(--primary);
+    }
+}
+
+.nuevoPedidoDiv2{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    /* border: 1px solid blue; */
+}
+.nuevoPedidoDivForm2 form{
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    width: 500px;
+    background: #5b5d4169;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 10px 10px 20px #babecc7c, -10px -10px 20px #ffffff6f;
+}
+
+.nuevoPedidoDivForm3 form{
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    width: 600px;
+    background: #5b5d4169;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 10px 10px 20px #babecc7c, -10px -10px 20px #ffffff6f;
+}
+
+.nuevoPedidoDivForm3 form select{
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.475rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    /* width: 375px; */
+}
+
+.nuevoPedidoDivForm3 form input[type="number"]{
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.475rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100px;
+}
+
+#nuevoPedido3 span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+}
+#nuevoPedido3 .addedProduct svg{
+    color: #E84353;
+    background: var(--black);
+    border-radius: 100%;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    transition: all 0.2s;
+    &:hover{
+        background: #E84353;
+        color: var(--white);
+    }
+}
+#nuevoPedido3 #agregadorProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background: var(--black);
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    &:hover{
+        color: var(--black);
+        background: var(--white);
+    }
+}
+#nuevoPedido3 svg{
+    width: 40px;
+    height: 40px;
+}
+
+.nuevoPedidoDivForm3 form input::-webkit-outer-spin-button,
+.nuevoPedidoDivForm3 form input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+.editarPedido{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.editarPedidoDiv{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.editarPedidoDivForm{
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.editarPedidoDivForm form{
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    width: 600px;
+    background: #5b5d4169;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 10px 10px 20px #babecc7c, -10px -10px 20px #ffffff6f;
+}
+
+.editarPedidoDivForm form > h2{
+    font-family: 'Poppins';
+    font-size: 2.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+
+.editarPedidoDivForm form select{
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 375px;
+}
+.editarPedidoDivForm .label-fecha-pedido{
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 24px;
+    text-align: center;
+}
+.editarPedidoDivForm form input[type="date"]{
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 350px;
+}
+.editarPedidoDivForm form button{
+    color: var(--white);
+    background: var(--primary);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 380px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover{
+        background: var(--white);
+        color: var(--primary);
+    }
+}
+
+.editarPedidoDivForm form input[type="number"]{
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.475rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100px;
+}
+.editarPedidoDivForm form input::-webkit-outer-spin-button,
+.editarPedidoDivForm form input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+    margin: 0;
+}
+
+#editarPedidoForm span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.875rem;
+}
+#editarPedidoForm .addedProduct svg{
+    color: #E84353;
+    background: var(--black);
+    border-radius: 100%;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    transition: all 0.2s;
+    &:hover{
+        background: #E84353;
+        color: var(--white);
+    }
+}
+#editarPedidoForm #editadorProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background: var(--black);
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    &:hover{
+        color: var(--black);
+        background: var(--white);
+    }
+}
+#editarPedidoForm svg{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .nuevoPedido{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .nuevoPedidoDivForm form{
+        box-sizing: border-box;
+        border: 1px solid var(--black);
+        border-radius: 8px;
+        width: 300px;
+        background: #5b5d4169;
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        box-shadow: 10px 10px 20px #babecc7c, -10px -10px 20px #ffffff6f;
+    }
+    
+    .nuevoPedidoDivForm form > h2{
+        font-size: 1.875rem;
+    }
+    
+    .nuevoPedidoDivForm form input[type="text"],.nuevoPedidoDivForm2 form input[type="text"],.nuevoPedidoDivForm3 form input[type="text"]{
+        font-size: 1.475rem;
+        width: 230px;
+    }
+
+    .nuevoPedidoDivForm form select,.nuevoPedidoDivForm2 form select{
+        font-size: 1.475rem;
+        width: 255px;
+    }
+    .nuevoPedidoDivForm .label-fecha-pedido,.nuevoPedidoDivForm2 .label-fecha-pedido{
+        color: var(--white);
+        font-size: 1.475rem;
+    }
+    .nuevoPedidoDivForm form input[type="date"],.nuevoPedidoDivForm2 form input[type="date"]{
+        font-size: 1.475rem;
+        width: 230px;
+    }
+    .nuevoPedidoDivForm form button,.nuevoPedidoDivForm2 form button,.nuevoPedidoDivForm3 form button{
+        font-size: 1.475rem;
+        width: 260px;
+    }
+
+    .nuevoPedidoDiv2{
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+        gap: 50px;
+    }
+    .nuevoPedidoDivForm2 form{
+        width: 300px;
+    }
+    
+    .nuevoPedidoDivForm3 form{
+        width: 350px;
+    }
+    
+    .nuevoPedidoDivForm3 form select{
+        font-size: 1.075rem;
+    }
+    
+    .nuevoPedidoDivForm3 form input[type="number"]{
+        font-size: 1.075rem;
+        width: 30px;
+    }
+  
+    #nuevoPedido3 span{
+        font-size: 1.275rem;
+    }
+    #nuevoPedido3 svg{
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+
+    .editarPedidoDivForm form{
+        width: 350px;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .editarPedidoDivForm form > h2{
+        font-size: 1.275rem;
+        /* line-height: 32px; */
+        text-align: center;
+    }
+    
+    .editarPedidoDivForm form select{
+        font-size: 1.475rem;
+        width: 255px;
+    }
+    .editarPedidoDivForm .label-fecha-pedido{
+        font-size: 1.475rem;
+    }
+    .editarPedidoDivForm form input[type="date"]{
+        font-size: 1.475rem;
+        width: 230px;
+    }
+    .editarPedidoDivForm form button{
+        font-size: 1.475rem;
+        width: 260px;
+    }
+    
+    .editarPedidoDivForm form input[type="number"]{
+        font-size: 1.075rem;
+        width: 30px;
+    }
+
+    #editarPedidoForm span{
+        font-size: 1.275rem;
+    }
+    #editarPedidoForm span select{
+        font-size: 1.475rem;
+        width: 200px;
+    }
+    #editarPedidoForm .addedProduct svg{
+        width: 30px;
+        height: 30px;
+    }
+    #editarPedidoForm #editadorProductos{
+        font-size: 1.475rem;
+    }
+    #editarPedidoForm svg{
+        width: 30px;
+        height: 30px;
+    }
+    
+
+}

@@ -1,0 +1,222 @@
+.almacen{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.almacen > h2{
+    font-family: 'Poppins';
+    font-size: 2.875rem;
+    font-weight: 900;
+    line-height: 0;
+    color: var(--black);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.menualmacen{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    width: 50%;
+    box-sizing: border-box;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.menualmacen a{
+    text-decoration: none;
+}
+.menualmacen button{
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: bold;
+    /* line-height: normal; */
+    font-style: normal;
+    letter-spacing: 0.3px;
+    color: var(--white);
+    background: var(--black);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding: 6px;
+    border-radius: 8px;
+    inset: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.menualmacen button:hover{
+    color: var(--black);
+    background: var(--white);
+}
+.menualmacen button svg{
+    width: 30px;
+    height: 30px;
+}
+
+.almacenGrid{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    position: relative;
+}
+.almacenGrid .almacenDiv{
+    width: 100%;
+    height: 200px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.7) 100%);
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 2px solid var(--black);
+    box-shadow: .1vh .1vh .8vh var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.almacenDiv .almacenDivButton{
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 20%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.almacenDivButton h2{
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.almacenDivButton svg{
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 30px;
+    color: var(--white);
+    padding: 5px;
+    background: #E84353;
+    cursor: pointer;
+}
+.almacenDiv .almacenDivData{
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.almacenDivData h2{
+    font-family: 'Poppins';
+    font-size: 1.275rem;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.filtroBusqueda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filtroBusqueda select{
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: bold;
+    /* line-height: normal; */
+    font-style: normal;
+    letter-spacing: 0.3px;
+    color: var(--white);
+    background: var(--black);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding: 6px;
+    border-radius: 8px;
+    inset: 0;
+}
+
+
+
+
+
+/*MEDIA PORTATILES */
+
+@media (max-width: 1500px) {
+  
+    
+}
+
+
+
+
+@media (max-width: 500px) {
+    .almacen{
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+    .almacen h2{
+        font-size: 1.875rem;
+    }
+    .menualmacen{
+        width: 100%;
+    }
+    .menualmacen button{
+        font-size: 1.075rem;
+    }
+    
+    .almacenGrid{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .almacenDivButton h2{
+        font-size: 0.875rem;
+    }
+    .almacenDivData h2{
+        font-size: 1.275rem;
+    }
+    .filtroBusqueda select{
+        font-size: 22px;
+        padding: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .menualmacen{
+        width: 100%;
+    }
+    #buscadorAlmacen{
+       font-size: 1.475rem;
+        padding: 10px;
+        width: 100px;
+    }
+    
+
+    
+}
