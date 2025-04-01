@@ -14,36 +14,58 @@ Aplicación Web hecha con (HTML,CSS,Javascript,PHP y mySQL) para administrar y g
 git clone https://github.com/alberto-code/Portfolio.git
 ```
 #### **Opción 2: Descargar Manualmente
--Ir al repositorio en GitHub.
--Hacer clic en "Code" → "Download ZIP".
--Extraer la carpeta en C:\xampp\htdocs\.
+Ir al repositorio en GitHub.
+
+- Hacer clic en "Code" → "Download ZIP".
+
+- Extraer la carpeta en C:\xampp\htdocs\.
 
 ### 3️⃣ Configurar Base de Datos
--Iniciar XAMPP y activar Apache y MySQL.
--Abrir un navegador y entrar a http://localhost/phpmyadmin/.
--Crear una base de datos con el nombre: 
+- Iniciar XAMPP y activar Apache y MySQL.
+
+- Abrir un navegador y entrar a http://localhost/phpmyadmin/.
+
+- Crear una base de datos con el nombre: 
 CREATE DATABASE portfolio;
--Importar el archivo database/portfolio.sql desde phpMyAdmin → Importar.
+
+- Importar el archivo database/portfolio.sql desde phpMyAdmin → Importar.
+
 ### 4️⃣ Configurar Conexión a la Base de Datos
--El archivo de conexión ya está creado en
+
+- El archivo de conexión ya está creado en
 Portfolio/server/conexion.php
--Si es necesario, edita este archivo para asegurarte de que los datos coincidan con tu configuración de XAMPP.
+
+- Si es necesario, edita este archivo para asegurarte de que los datos coincidan con tu configuración de XAMPP.
+
 ### 5️⃣ Ejecutar el Proyecto
--Abrir un navegador y entrar en:
+
+- Abrir un navegador y entrar en:
 http://localhost/Portfolio/
 
 ### 6️⃣ Acceder a la web
--Para acceder a la aplicación te pedira un usuario y contraseña, el cual es:
+
+- Para acceder a la aplicación te pedira un usuario y contraseña, el cual es:
+  
 Usuario: PRUEBA
 Contraseña: PRUEBA
 
 ¡Listo! 🚀🎉
+---
+
+
 
 ⚡ Tecnologías Utilizadas
+
 Frontend: HTML, CSS, JavaScript
+
 Backend: PHP
+
 Base de Datos: MySQL
 
+---
+
 📬 Contacto
+
 Si tienes dudas o sugerencias, puedes contactarme en:
+
 📧 Email: albertolopez288@gmail.com
