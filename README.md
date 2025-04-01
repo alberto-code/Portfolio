@@ -1,6 +1,8 @@
 #  Portfolio - Aplicacion Web
 Aplicación Web hecha con (HTML, CSS, Javascript, PHP y MySQL) para administrar y gestionar materias, bobinas y productos terminados, asi como gestionar los diferentes pedidos que se hagan. Tambien tiene una gestión de los diferentes tecnicos que la utilizaran, distinguiendo entre admin, administración y tecnico. Posibilidad de ver todos los registros, login, logout, etc. hechos en la aplicacion a traves de la pagina registros los cuales muestra a traves de un calendario, segun el tecnico, la hora y la fecha. Por último tiene un reconocimiento de codigos de barras a traves de camara para restar la cantidad mandada en un pedido.
 
+![Inicio]()
+
 ## 🚀 Instalación y Configuración
 
 ### 1️⃣ Requisitos
